@@ -1,0 +1,417 @@
+.btn:focus,
+.btn:active,
+.btn:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  .login-box {
+    text-align: center;
+    line-height: 1rem;
+  }
+
+  .login-title {
+    font-weight: 700;
+    font-size: clamp(24px, 2.8vw, 32px);
+    line-height: clamp(32px, 2.8vw, 42px);
+    color: #3d3d3d;
+  }
+
+  .login-subtitle {
+    margin-top: 16px;
+    margin-bottom: 26px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #3d3d3d;
+  }
+
+  .create-link {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    color: #587fff;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  .login-input {
+    width: 100%;
+    max-width: 280px;
+    height: 48px !important;
+    margin-bottom: 16px;
+    border: 2px solid #3e3e3e !important;
+    border-radius: 0 !important;
+    color: #3e3e3e !important;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    box-shadow: none !important;
+    padding: 12px 0 14px 16px;
+  }
+
+  input[type="password"].login-input {
+    margin-bottom: 0;
+  }
+
+  .login-input::placeholder {
+    color: #3e3e3e !important;
+    margin-left: 16px;
+  }
+
+  .checkbox-row {
+    display: flex;
+    align-items: center;
+    margin-top: 21px !important;
+  }
+
+  .custom-checkbox .form-check-input {
+    border: 2px solid #000000;
+    width: 32px;
+    height: 32px;
+    opacity: 1;
+    border-radius: 0 !important;
+    background-color: #f2f2f2;
+    box-shadow: none !important;
+    outline: none !important;
+  }
+.form-check-input {
+  accent-color: unset !important;
+}
+
+  // .form-check-input:checked[type=checkbox] {
+  //   accent-color: green !important;
+  // }
+
+  .checkbox-text {
+    margin-left: 16px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    color: #3d3d3d;
+  }
+
+  .signin-btn {
+    width: 100%;
+    max-width: 280px;
+    height: 48px;
+    margin-top: 24px;
+    background: #3c3c3c !important;
+    color: #fcfcfc;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+    border-radius: 0 !important;
+    border: none !important;
+  }
+
+  .divider-section {
+    display: flex;
+    align-items: center;
+    margin-top: 32px;
+  }
+
+  .line {
+    flex: 1;
+    height: 2px;
+    background: #cfcfcf;
+  }
+
+  .or-text {
+    padding: 0 10px;
+    font-size: 14px;
+    color: #3d3d3d;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: 3%;
+    text-align: center;
+  }
+
+  .error-msg {
+    background: #ffdddd;
+    border: 1px solid #ff8f8f;
+    padding: 5px;
+    color: #c00000;
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 1.4em;
+  }
+}
+
+.social-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 31px;
+  padding: 0 1.25rem;
+  gap: 16px;
+}
+
+.icon-circle {
+  width: 48px;
+  height: 48px;
+  border: 2px solid #3e3e3e;
+  color: #3e3e3e;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 12px;
+}
+
+.listing-page {
+  padding: 30px clamp(24px, 8vw, 146px);
+
+  .header {
+    margin-bottom: 57px;
+    width: inherit;
+  }
+
+  .heading {
+    font-weight: 700;
+    font-size: clamp(20px, 2.8vw, 24px);
+    line-height: clamp(28px, 2.8vw, 34px);
+    color: #3d3d3d;
+  }
+
+  .menu-btn {
+    display: none;
+    background: transparent !important;
+    color: #3d3d3d !important;
+    border: none !important;
+    margin-left: auto;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .menu-btn:hover .dropdown-menu {
+    display: block !important;
+  }
+
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    background: #ffffff;
+    border: 2px solid #f5f5f5;
+    border-radius: 0;
+    list-style: none;
+    padding: 0;
+    min-width: 120px !important;
+    z-index: 200;
+    .dropdown-item {
+      color: #8b8b8b !important;
+      border-bottom: 2px solid #f0f0f0;
+      font-weight: 600;
+      padding-left: 0.5em;
+      cursor: pointer;
+    }
+    .dropdown-item.active {
+      background-color: transparent !important;
+      color: #3d3d3d !important;
+      border-bottom: 2px solid #3e3e3e;
+    }
+    .dropdown-item:last-child {
+      border-bottom: none;
+    }
+    .dropdown-item:active,
+    .dropdown-item:focus {
+      background-color: transparent !important;
+    }
+  }
+
+  .region-tabs {
+    display: flex;
+    margin-left: auto;
+    flex-wrap: nowrap;
+    font-size: 16px;
+    gap: 24px;
+    line-height: 2;
+    margin-right: 4px;
+
+    div {
+      min-width: 2.5em;
+    }
+
+    .tab-name {
+      cursor: pointer;
+      font-weight: 600;
+      color: #8b8b8b !important;
+    }
+
+    .active {
+      border-bottom: 2px solid #3e3e3e;
+      color: #3d3d3d !important;
+    }
+  }
+
+  .welcome-header {
+    display: flex;
+    gap: 28px;
+    font-size: clamp(25px, 2.8vw, 37px);
+    font-weight: 800 !important;
+    color: #3d3d3d;
+    line-height: 1;
+    padding: 0;
+  }
+
+  .welcome-header::before,
+  .welcome-header::after {
+    content: '';
+    flex-grow: 1;
+    min-height: 100%;
+  }
+
+  .welcome-header::before {
+    border-top: 3px solid #3d3d3d;
+    margin-top: 6px;
+    margin-left: 2px;
+  }
+
+  .welcome-header::after {
+    border-bottom: 3px solid #3d3d3d;
+    margin-bottom: 4px;
+    margin-right: 2px;
+  }
+
+  .img-slider {
+    display: flex;
+    margin-top: 38px;
+
+    .img-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 77%;
+      height: 498px;
+      background-color: #f0f0f0;
+      border: 2px solid #3d3d3d;
+    }
+
+    .small {
+      margin-left: 35px;
+      width: 23%;
+    }
+  }
+
+  .slider-btn-group {
+    display: flex;
+    justify-content: center;
+    width: 77%;
+    position: relative;
+    top: -54px;
+    gap: 5px;
+
+    .slider-btn {
+      background-color: transparent !important;
+      color: #1d1b20 !important;
+      border: none !important;
+      padding: 0;
+    }
+
+    .dot-group {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      background-color: transparent !important;
+      color: #1d1b20 !important;
+      border: none !important;
+      padding: 0;
+    }
+
+    .dot {
+      width: 14px;
+      height: 14px;
+      background-color: #FEF7FF !important;
+      border-radius: 10px;
+      padding: 0;
+    }
+
+    .dot.active {
+      background-color: #1d1b20 !important;
+    }
+
+    .slider-btn:last-child {
+      margin-right: 37px;
+    }
+  }
+
+  .country-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    gap: 2%;
+
+    .country-card {
+      display: flex;
+      width: 49%;
+      margin-bottom: 2%;
+      border: 2px solid #3e3e3e;
+      box-shadow: 7px 7px 0 #e1e1e1;
+    }
+
+    .country-card img {
+      width: 35%;
+      padding: clamp(0.5em, 2vw, 1em);
+      object-fit: contain;
+    }
+
+    .country-text {
+      padding: clamp(0.8em, 2vw, 1.5em) 0.25em;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .country-name {
+      font-weight: 600;
+      font-size: clamp(14px, 2.5vw, 24px);
+    }
+
+    .country-region {
+      font-weight: 400;
+      font-size: clamp(12px, 2.2vw, 16px);
+      line-height: 1.2;
+      letter-spacing: 0.03em;
+    }
+  }
+
+  .load-more-btn {
+    background: #3c3c3c !important;
+    color: #fcfcfc;
+    font-weight: 600;
+    font-size: clamp(12px, 2.2vw, 16px);
+    line-height: 100%;
+    text-align: center;
+    border-radius: 0 !important;
+    border: none !important;
+    padding: clamp(8px, 2vw, 18px) clamp(14px, 4vw, 34px);
+    margin-top: 0.5em;
+  }
+
+  .contact-container {
+    padding: 5em 0;
+  }
+
+  .copy-right-text {
+    color: #3d3d3d;
+    margin-top: 3em;
+    font-weight: 700;
+    font-size: clamp(10px, 2.8vw, 13px);
+    line-height: clamp(16px, 2.8vw, 19px);
+    text-align: center;
+
+    div {
+      margin-bottom: 1em;
+    }
+  }
+}
